@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="name" content="content" charset="utf-8">
-	<title>Advanced</title>
-	
+	<meta charset="UTF-8">
+	<title>Advanced Exercise</title>
+	<style>
+		.red
+		{
+			color: red;
+		}
+
+		.green
+		{
+			color: green;
+		}
+	</style>
 </head>
 <body>
-	
-	
-	
-
-
-	<script type="text/javascript" src="script.json"></script>
-	<script>
-		let i=0;
-		document.writeln("<ul>");
-		for (i = 0;i < books.length; i++) {
-			document.writeln("<li><p>" + books[i].title + "</p><br><p>" + books[i].author + "</p><br><p class= 'color'>" + books[i].read + "</p></li>" );
-            //code
-        }
+	<ul id="list">
 		
-		if (books.read === false) {
-			books.read.getElementsByClassName("color").style.color = "red";
-            //code
-        }
-		else {
-			books.read.getElementsByClassName("color").style.color = "green";
+	</ul>
+	<script src="script.json"></script>
+	<script>
+		let i = 0;
+		let ul = document.getElementById("list");
+		for(i = 0; books.length; i++)
+		{
+		    if(books[i].read == "false")
+		    {
+                let li = document.createElement("li");
+		        li.innerHTML = "<img src='buch.jpg' width='200px' height='250px'><p>" + books[i].title + "</p><p>" + books[i].author + "</p><p class='red'>" + books[i].read + "</p>";
+		        document.getElementById("list").appendChild(li);
+		    }
+		    else
+		    {
+		    	let li = document.createElement("li");
+		        li.innerHTML = "<img src='buch.jpg' width='200px' height='250px'><p>" + books[i].title + "</p><p>" + books[i].author + "</p><p class='green'>" + books[i].read + "</p>";
+		        document.getElementById("list").appendChild(li);
+		    }
 		}
+
 	</script>
-        
+	
 </body>
 </html>
