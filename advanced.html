@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="name" content="content" charset="utf-8">
+	<title>Advanced</title>
+	
+</head>
+<body>
+	
+	
+	
+
+
+	<script type="text/javascript" src="script.json"></script>
+	<script>
+		let i=0;
+		document.writeln("<ul>");
+		for (i = 0;i < books.length; i++) {
+			document.writeln("<li><p>" + books[i].title + "</p><br><p>" + books[i].author + "</p><br><p class= 'color'>" + books[i].read + "</p></li>" );
+            //code
+        }
+		
+		if (books.read === false) {
+			books.read.getElementsByClassName("color").style.color = "red";
+            //code
+        }
+		else {
+			books.read.getElementsByClassName("color").style.color = "green";
+		}
+	</script>
+        
+</body>
+</html>

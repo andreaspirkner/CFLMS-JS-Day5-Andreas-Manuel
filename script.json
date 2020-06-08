@@ -1,0 +1,16 @@
+let books = [{
+    "title": "Harry Potter",
+    "author": "J.K.Rowling",
+    "read": "false"
+    },
+{
+    "title": "Harry Potter 2",
+    "author": "J.K.Rowling",
+    "read": "false"
+    },
+    {
+    "title": "Harry Potter 3",
+    "author": "J.K.Rowling",
+    "read": "true"   
+    }
+]
