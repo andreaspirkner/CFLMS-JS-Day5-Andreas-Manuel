@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intermediate</title>
+</head>
+<body>
+	<script>
+		let employees = 
+		{
+            "Employees" : 
+            [{
+                "ID" : "123451",
+                "FirstName" : "Fabian",
+                "LastName" : "Kreuzmueller",
+                "EMail" : "fabian@socom.com",
+                "Salary" : "1200€"
+            },
+            {
+                "ID" : "46784",
+                "FirstName" : "Hans",
+                "LastName" : "Wurscht",
+                "EMail" : "hans@socom.com",
+                "Salary" : "1200€"
+            },
+            {
+                "ID" : "3456735",
+                "FirstName" : "Michael",
+                "LastName" : "Ottakringer",
+                "EMail" : "michi@socom.com",
+                "Salary" : "1300€"
+            },
+            {
+                "ID" : "5486",
+                "FirstName" : "Jasmin",
+                "LastName" : "Berger",
+                "EMail" : "jassi@socom.com",
+                "Salary" : "1600€"
+            },
+            {
+                "ID" : "9886679",
+                "FirstName" : "Corinna",
+                "LastName" : "Maier",
+                "EMail" : "corinna@socom.com",
+                "Salary" : "1400€"
+            },
+            {
+                "ID" : "75632756",
+                "FirstName" : "Georg",
+                "LastName" : "Niederer",
+                "EMail" : "georg@socom.com",
+                "Salary" : "1600€"
+            },
+            {
+                "ID" : "567356",
+                "FirstName" : "Pascal",
+                "LastName" : "Müller",
+                "EMail" : "pascal@socom.com",
+                "Salary" : "1700€"
+            },
+            {
+                "ID" : "83678",
+                "FirstName" : "Daniela",
+                "LastName" : "Rädele",
+                "EMail" : "daniela@socom.com",
+                "Salary" : "1800€"
+            },
+            {
+                "ID" : "82568356",
+                "FirstName" : "Karl",
+                "LastName" : "Schmelzer",
+                "EMail" : "karl@socom.com",
+                "Salary" : "1500€"
+            },
+            {
+                "ID" : "5672357",
+                "FirstName" : "Nicolaus",
+                "LastName" : "Achberger",
+                "EMail" : "nicolaus@socom.com",
+                "Salary" : "750€"
+            }]   
+		}
+
+		let i = 0
+		document.writeln("<table border='2'><tr>");
+		for(i = 0; i < employees.Employees.length; i++)
+		{
+			document.writeln("<td>");
+			document.writeln("<table border='1' width=100>");
+			document.writeln("<tr><td><b>ID</b></td><td width=50>" + employees.Employees[i].ID + "</td></tr>");
+            document.writeln("<tr><td><b>First Name</b></td><td width=50>" + employees.Employees[i].FirstName + "</td></tr>");
+            document.writeln("<tr><td><b>Last Name</b></td><td width=50>" + employees.Employees[i].LastName + "</td></tr>");
+            document.writeln("<tr><td><b>E-Mail</b></td><td width=50>" + employees.Employees[i].EMail + "</td></tr>");
+            document.writeln("<tr><td><b>Salary</b></td><td width=50>" + employees.Employees[i].Salary + "</td></tr>");
+            document.writeln("</table>");
+            document.writeln("</td>");
+		}
+	</script>
+	
+</body>
+</html>
